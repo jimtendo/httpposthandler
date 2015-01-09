@@ -1,0 +1,11 @@
+{
+    "name": "jimtendo/httpposthandler",
+    "autoload": {
+        "psr-0" : {
+            "Jimtendo\\HttpPostHandler" : "src"
+        }
+    },
+    "require": {
+        "monolog/monolog": "dev-master"
+    }
+}
