@@ -12,7 +12,7 @@ use Monolog\Logger;
 /**
  * @author James Augustus Zuccon <zuccon@gmail.com>
  */
-class HttpPostHandler extends AbstractProcessingHandler
+class HttpPostHandler extends \Monolog\Logger\AbstractProcessingHandler
 {
     /**
      * @var string
