@@ -6,6 +6,6 @@
         }
     },
     "require": {
-        "monolog/monolog": "dev-master"
+        "monolog/monolog": "~1.11"
     }
 }
