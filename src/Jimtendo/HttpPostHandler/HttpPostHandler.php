@@ -45,7 +45,7 @@ class HttpPostHandler extends \Monolog\Handler\AbstractProcessingHandler
     {
         $data = array();
         $data['api_key'] = $this->apiKey;
-        $data['created_at'] = $record['datetime'];
+        $data['created_at'] = $record['datetime']->format('U');
         $data['code'] = $record['level'];
         
         if (isset($_SERVER['REQUEST_METHOD'])) {
