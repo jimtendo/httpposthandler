@@ -76,6 +76,8 @@ class HttpPostHandler extends \Monolog\Handler\AbstractProcessingHandler
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
         curl_setopt($ch, CURLOPT_POST, 1);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $data );
+        curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 3);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 3);
         $content = trim(curl_exec($ch));
         curl_close($ch);
         
